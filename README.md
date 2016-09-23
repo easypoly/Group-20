@@ -1,0 +1,11 @@
+Professional Practice - SCS3115 
+Group 20 
+Financial Modeling Applicaion in Sinhala
+=====================Authorship====================================
+@Fasly A.A.F.M 		2013CS035 	13000357 	afasly@gmail.com
+@Kanchana G.D.D. 	2013CS053 	13000535 	kanchanad@gmail.com
+@Padukka N.N. 		2013CS084 	13000845 	nisalpadukka@gmail.com
+@Ranathunga N.M. 	2013CS098 	13000985 	malith009@gmail.com
+@Wijerathne H.J.K. 	2013CS137 	13001371 	jankavi85@gmail.com
+
+====================================================================

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/bg1"
+    tools:context="com.example.owner.easypoly2.ActivityLoanEx"
+    android:clickable="true">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="ණය වාරිකයක අගය ගණනය"
+        android:id="@+id/textView5"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/tableLayout"
+        android:layout_alignEnd="@+id/tableLayout" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tableLayout"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="49dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="නිමල් "
+                android:id="@+id/textView26"
+                android:layout_below="@+id/textView5"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_column="0" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/interest"
+                android:width="100dp"
+                android:text="8"
+                android:textAlignment="center"
+                android:inputType="number|numberDecimal"
+                android:layout_column="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="% ක වාර්ෂික"
+                android:id="@+id/textView8"
+                android:layout_alignBottom="@+id/interest"
+                android:layout_toRightOf="@+id/textView11"
+                android:layout_toEndOf="@+id/textView11"
+                android:layout_column="2" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="පොලියක් යටතේ රුපියල්"
+                android:id="@+id/textView9"
+                android:layout_span="3"
+                android:layout_below="@+id/textView5"
+                android:layout_centerHorizontal="true"
+                android:layout_column="0" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/totalv"
+                android:layout_below="@+id/textView9"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:selectAllOnFocus="true"
+                android:layout_span="2"
+                android:width="200dp"
+                android:text="10000"
+                android:textAlignment="center"
+                android:inputType="number|numberDecimal"
+                android:layout_column="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="ක් ණයට ගනී."
+                android:id="@+id/textView10"
+                android:layout_alignBottom="@+id/totalv"
+                android:layout_toRightOf="@+id/totalv"
+                android:layout_toEndOf="@+id/totalv"
+                android:layout_column="2" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="වාරික "
+                android:id="@+id/textView11"
+                android:layout_alignBottom="@+id/terms"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_column="0" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/terms"
+                android:width="100dp"
+                android:text="10"
+                android:textAlignment="center"
+                android:inputType="number"
+                android:layout_below="@+id/textView10"
+                android:layout_toRightOf="@+id/interest"
+                android:layout_toEndOf="@+id/interest"
+                android:layout_column="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="කින් එම "
+                android:id="@+id/textView7"
+                android:layout_column="2" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="එම මුදල "
+                android:id="@+id/textView12"
+                android:layout_column="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="ගෙවන්නේ "
+                android:id="@+id/textView22"
+                android:layout_column="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="නම් "
+                android:id="@+id/textView27"
+                android:layout_column="2" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="වාරිකයකට "
+                android:id="@+id/textView28"
+                android:layout_column="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="ගෙවිය යුතු "
+                android:id="@+id/textView29"
+                android:layout_column="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="මුදල?"
+                android:id="@+id/textView30"
+                android:layout_column="2" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="රුපියල් "
+                android:id="@+id/textView31"
+                android:layout_column="0"
+                android:textAlignment="viewEnd" />
+
+            <EditText android:id="@+id/value"
+                android:layout_span="2"
+                android:layout_column="1" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:text="ගණනය කිරීම"
+                android:onClick="add"
+                android:id="@+id/button"
+                android:layout_column="1" />
+        </TableRow>
+    </TableLayout>
+
+
+</RelativeLayout>
